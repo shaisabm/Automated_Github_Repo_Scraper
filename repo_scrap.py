@@ -51,14 +51,11 @@ def directory(repo):
 
 
 def main(repo):
-    # all_files = open('all_files.txt','w')
-    # all_folders = open('all_folders.txt', 'w')
-    # global all_files, all_folders
+
     directory(repo)
     auto(repo_base='https://github.com/')
 
-    # all_files.close()
-    # all_folders.close()
+
 
 with open('repo.txt','r') as repo_file:
     scap_repo = input("Enter the number of repo to be scrap (enter * to scap all repo): ")
@@ -71,18 +68,6 @@ with open('repo.txt','r') as repo_file:
         print(repos[count])
         count += 1
 
-# with open('repo.txt','r') as repo_file:
-#     repos= repo_file.read().split()
-#     scap_repo = int(input("Enter the number of repo to be scrap (enter * to scap all repo): "))
-#     if scap_repo == '*': scap_repo = len(repos)
-#     repo_file.close()
-#     count = 0
-#     main(repos[0])
-#     main(repos[1])
-# with open('repo.txt','r') as repo_file:
-#     repos= repo_file.read().split()
-#     main(repos[0])
-#     main(repos[1])
 
 
 
